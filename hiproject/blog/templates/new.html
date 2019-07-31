@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{%block contents%}
+<h1>여긴 new야.</h1>
+
+<div class="container">
+    <form action="{%url 'create'%}">
+
+        <li>제목 : <input type="text" name="title"> </li>
+
+        <li>내용 : <textarea name="body" cols=40 rows=10></textarea> </li>
+        
+        <input type="submit" value="글 등록">
+    </form>
+
+</div>
+
+{% endblock %}

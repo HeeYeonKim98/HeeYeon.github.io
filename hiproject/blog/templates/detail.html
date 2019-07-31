@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{%block contents%}
+<h1>여긴 detail이야.</h1>
+
+<h2>{{blog.title}}</h2>
+<h4>{{blog.pub_date}}</h4>
+<h4>{{blog.body}}</h4>
+
+<a href="{% url 'home' %}">돌아가기</a>
+{% endblock %}
